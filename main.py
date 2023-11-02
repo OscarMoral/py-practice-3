@@ -6,24 +6,22 @@ Exercise 3: Basic calculator
 
 import random
 
+
 def guess_the_number():
-  target_number = random.randint(1, 10)
+    target_number = random.randint(1, 10)
+    attempts = 0
 
-  attempts = 0
-  while True:
-    guess = int(input("Guess the number (1-10): "))
-    attempts += 1
+    while True:
+        guess = int(input("Guess the number (1-10): "))
+        attempts += 1
 
-    # implement a if-else statement
-    if guess: # Fix code
-      # if guess is less than target_number
-      # print "Too low. Try again."
-      # else if guess is greater than target_number
-      # print "Too high. Try again."
-      print("Try again.")
-    else:
-      print(f"Congratulations! You guessed the number ({target_number}) in {attempts} attempts.")
-      break
+        if guess < target_number:
+            print("Too low. Try again.")
+        elif guess > target_number:
+            print("Too high. Try again.")
+        else:
+            print(f"Congratulations! You guessed the number ({target_number}) in {attempts} attempts.")
+            break
 
 
 def multiplication_table():
