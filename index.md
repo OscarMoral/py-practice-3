@@ -25,7 +25,7 @@
      - Implement exercise-2
      - Commit your changes in the `feature/exercise-2` branch.
 
-   - **Group Member 2: `feature/exercise-3`**
+   - **Group Member 3: `feature/exercise-3`**
      * Create a new branch named `feature/exercise-3` from the `main` branch.
      * Implement exercise-3
      * Commit your changes in the `feature/exercise-3` branch.
