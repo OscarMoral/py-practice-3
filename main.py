@@ -40,17 +40,28 @@ for i in range(1, 11):
 
 
 def basic_calculator():
-  num1 = float(input("Enter the first number: "))
-  operator = input("Enter an operator (+, -, *, /): ")
-  num2 = float(input("Enter the second number: "))
-
-  # implement a if-else statement
-  if num1 and num2: # fix code
-    result = num1 + num2
-  else:
-    result = "Invalid operator"
-
-  print("Result:", result)
+    num1 = float(input("Enter the first number: "))
+    operator = input("Enter an operator (+, -, *, /): ")
+    num2 = float(input("Enter the second number: "))
+    
+    if operator == "+":
+        result = num1 + num2
+        print("Result:", result)
+    elif operator == "-":
+        result = num1 - num2
+        print("Result:", result)
+    elif operator == "*":
+        result = num1 * num2
+        print("Result:", result)
+    elif operator == "/":
+       
+        if num2 != 0:
+            result = num1 / num2
+            print("Result:", result)
+        else:
+            print("Error")
+    else:
+        print("Invalid operator")
 
 
 def main():
